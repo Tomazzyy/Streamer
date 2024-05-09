@@ -32,14 +32,24 @@ section {
     text-align: center;
     margin: 20px auto; /* Adicionado para centralizar horizontalmente */
     border-radius: 10px;
+    
 }
 header img{
 text-align: center;
 border-radius: 50%;
+
 }
 section.jogos img {
-border-radius: 20px;    
+border-radius: 20px;
+transform: scale(1.0);    
 }
 h1{
     color: rgba(255, 255, 255, 0.705);
 }
+@keyframes section.jogos img {
+    to {
+        transform: translate(5px, -10px);
+    }
+   
+}
+
