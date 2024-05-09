@@ -19,6 +19,8 @@ html, body{
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
 }
 header{
     text-align: center;
@@ -37,19 +39,40 @@ section {
 header img{
 text-align: center;
 border-radius: 50%;
-
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.623);
+transition: transform 0.3s ease-in-out;
 }
 section.jogos img {
 border-radius: 20px;
-transform: scale(1.0);    
+transform: scale(1.0);   
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.623);
+transition: transform 0.3s ease; 
 }
+section.jogos img:hover {
+    transform: scale(1.2); 
+}
+header img:hover {
+    transform: scale(1.2); /* Aplica um zoom de 120% ao passar o mouse */
+}
+
 h1{
     color: rgba(255, 255, 255, 0.705);
 }
-@keyframes section.jogos img {
-    to {
-        transform: translate(5px, -10px);
-    }
-   
+a{
+    text-decoration: none;
 }
+section.canais img{
+    border-radius: 50%;
+    transform: scale(1.2);
+    padding: 10px;
+    transition: transform 0.3s ease; 
+
+}
+section.canais img:hover {
+    transform: scale(1.4); /* Aplica um zoom de 120% ao passar o mouse */
+}
+
+
+
+
 
